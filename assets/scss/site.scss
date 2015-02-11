@@ -1,0 +1,32 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "typography";
+
+header, main, footer {
+  @include outer-container;
+}
+
+q {
+  quotes: "“" "”" "‘" "’";
+}
+q:before {
+  content: open-quote;
+}
+q:after {
+  content: close-quote;
+}
+
+main > section {
+  margin-bottom: emRhythm(3, $ms-down1);
+}
+
+#services {
+  article {
+    @include span-columns(4);
+  }
+}
+.testimonials {
+  blockquote {
+    @include span-columns(6);
+  }
+}
