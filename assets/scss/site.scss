@@ -2,22 +2,24 @@
 @import "neat/neat";
 @import "typography";
 
-header, main, footer {
+body > header, body > main, body > footer {
   @include outer-container;
+  margin-bottom: emRhythm(3, $ms-down1);
 }
 
 q {
   quotes: "“" "”" "‘" "’";
-}
-q:before {
-  content: open-quote;
-}
-q:after {
-  content: close-quote;
+  &:before {
+    content: open-quote;
+  }
+  &:after {
+    content: close-quote;
+  }
 }
 
 main > section {
   margin-bottom: emRhythm(3, $ms-down1);
+  @include span-columns(12);
 }
 
 #services {
@@ -29,4 +31,9 @@ main > section {
   blockquote {
     @include span-columns(6);
   }
+}
+
+main > .contact {
+  @include span-columns(8);
+  @include shift(2);
 }

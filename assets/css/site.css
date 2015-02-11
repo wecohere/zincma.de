@@ -186,26 +186,34 @@ hr {
 h1, h2, h3, h4, h5, h6 {
   text-transform: none; }
 
-header, main, footer {
+p {
+  max-width: 100%; }
+
+body > header, body > main, body > footer {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
-  header::after, main::after, footer::after {
+  margin-right: auto;
+  margin-bottom: 1.59075em; }
+  body > header::after, body > main::after, body > footer::after {
     clear: both;
     content: "";
     display: table; }
 
 q {
   quotes: "“" "”" "‘" "’"; }
-
-q:before {
-  content: open-quote; }
-
-q:after {
-  content: close-quote; }
+  q:before {
+    content: open-quote; }
+  q:after {
+    content: close-quote; }
 
 main > section {
-  margin-bottom: 1.59075em; }
+  margin-bottom: 1.59075em;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  main > section:last-child {
+    margin-right: 0; }
 
 #services article {
   float: left;
@@ -221,6 +229,15 @@ main > section {
   margin-right: 2.35765%;
   width: 48.82117%; }
   .testimonials blockquote:last-child {
+    margin-right: 0; }
+
+main > .contact {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%; }
+  main > .contact:last-child {
     margin-right: 0; }
 
 /*# sourceMappingURL=site.css.map */
