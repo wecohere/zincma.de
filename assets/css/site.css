@@ -227,7 +227,15 @@ main > section {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%; }
+  width: 48.82117%;
+  margin-bottom: 0.53025em; }
+  .testimonials blockquote:first-of-type {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .testimonials blockquote:first-of-type:last-child {
+      margin-right: 0; }
   .testimonials blockquote:last-child {
     margin-right: 0; }
 

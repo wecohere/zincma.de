@@ -1,6 +1,7 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
 @import "typography";
+@import "reset";
 
 body > header, body > main, body > footer {
   @include outer-container;
@@ -29,7 +30,11 @@ main > section {
 }
 .testimonials {
   blockquote {
+    &:first-of-type {
+      @include span-columns(12);
+    }
     @include span-columns(6);
+    margin-bottom: emRhythm(1, $ms-down1);
   }
 }
 
