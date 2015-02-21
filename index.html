@@ -1,78 +1,81 @@
-<!DOCTYPE html>
-<head>
-  <title>Zinc - Great software. Hands-on training. Integrated coaching</title>
-  <link rel="stylesheet" href="/assets/css/site.css" type="text/css" />
-</head>
-
-<body>
+---
+title: Great software. Hands-on training. Integrated coaching
+---
+<section id="services">
+<article>
   <header>
-    <h1>Zinc</h1>
-    <h4>Great Software, Hands-on Training, Integrated Coaching.</h4>
+    <h3>Software</h3>
   </header>
   <main>
-  <section id="services">
+  <p>Zinc combines user-centered design, customer development, lean
+  principles, and rigorous software development practices to deliver software
+  that is adaptable to your customers and businesses.</p>
+  </main>
+</article>
+
+<article>
+  <header>
+    <h3>Training</h3>
+  </header>
+  <main>
+  <p>We use our experience as both implementors and educators to provide
+  training based on real-world problem solving, covering both cutting-edge
+  and well-proven techniques and technologies.</p>
+  </main>
+</article>
+
+<article>
+  <header>
+    <h3>Coaching</h3>
+  </header>
+  <main>
+  <p>As coaches, we integrate directly with your team to apply techniques
+  and technologies that fit your specific context. Our experience in
+  every role required to deliver quality software allows us to help you
+  discover and apply the right principles and practices for your
+  situation.</p>
+  </main>
+</article>
+</section>
+
+<section class="articles">
+  <h3>What We're Doing</h3>
+  {% for post in site.posts %}
     <article>
       <header>
-      <h3>Software</h3>
+        <h3 id="{{ post.title | handleize }}"><a href="{{post.url}}">{{ post.title }}</a></h3>
       </header>
-      <main>
-      <p>Zinc combines user-centered design, customer development, lean
-      principles, and rigorous software development practices to deliver software
-      that is adaptable to your customers and businesses.</p>
-      </main>
+      {{ post.excerpt }}
     </article>
+  {% endfor %}
+</section>
 
-    <article>
-      <header>
-        <h3>Training</h3>
-      </header>
-      <main>
-      <p>We use our experience as both implementors and educators to provide
-      training based on real-world problem solving, covering both cutting-edge
-      and well-proven techniques and technologies.</p>
-      </main>
-    </article>
+<section class="testimonials">
+  <h3>What Our Clients Say</h3>
 
-    <article>
-      <header>
-        <h3>Coaching</h3>
-      </header>
-      <main>
-        <p>As coaches, we integrate directly with your team to apply techniques
-        and technologies that fit your specific context. Our experience in
-        every role required to deliver quality software allows us to help you
-        discover and apply the right principles and practices for your
-        situation.</p>
-      </main>
-    </article>
-  </section>
+  <blockquote>
+    <q>When I was 7, I built a cubby house under a big old tree and made it
+      with cardboard boxes.  It rained. The thing couldn't cope and fell
+      apart.<br /><br />
 
-  <section class="testimonials">
-    <h3>What Our Clients Say</h3>
+      If you want to build something robust, use the resources that set the
+      right foundation that will last.<br /><br />
 
-    <blockquote>
-      <q>When I was 7, I built a cubby house under a big old tree and made it
-        with cardboard boxes.  It rained. The thing couldn't cope and fell
-        apart.<br /><br />
+      Zee ensured we didn't build a cardboard cubby house with our product.<br /><br />
 
-        If you want to build something robust, use the resources that set the
-        right foundation that will last.<br /><br />
+      His experience, mentorship and skills in the craft of building solid
+      applications set us on the right path.<br /><br />
 
-        Zee ensured we didn't build a cardboard cubby house with our product.<br /><br />
+      Looking forward to working with him again soon.
+    </q>
 
-        His experience, mentorship and skills in the craft of building solid
-        applications set us on the right path.<br /><br />
-
-        Looking forward to working with him again soon.
-      </q>
-
-      <footer>
-        <cite>Adam Broadway, CTO of <a href="https://near-me.com">Near
-            Me</a></cite>
-      </footer>
-    </blockquote>
-    <blockquote>
-      <q>Zee is an excellent teacher and
+    <footer>
+      <cite>Adam Broadway, CTO of <a href="https://near-me.com">Near
+          Me</a></cite>
+    </footer>
+  </blockquote>
+  <blockquote>
+    <q>Zee is an excellent teacher and
       facilitator of group learning. He is patient and funny
       and asks the right questions to get people thinking.
       He is clearly passionate about programming and
@@ -80,32 +83,20 @@
       excitement is contagious.I've really enjoyed learning
       Ruby on Rails, TDD, and new ways to think about
       programming challenges from him.</q>
-      <footer>
-        <cite>Danielle Gellis, Software Developer</cite>
-      </footer>
-    </blockquote>
-    <blockquote>
-      <q>Zee is one of the more passionate developers I've
+    <footer>
+      <cite>Danielle Gellis, Software Developer</cite>
+    </footer>
+  </blockquote>
+  <blockquote>
+    <q>Zee is one of the more passionate developers I've
       worked with. His work is impeccable, as he takes the
       utmost care to craft it. Zee is great to work with, he
       is patient and explains things well. I thoroughly
       enjoyed pairing with him, and felt he brought a needed
       quality of excellence to our team.</q>
 
-      <footer>
-        <cite>Jeff Langr, <a href="http://langrsoft.com">Technical Lead and Author</a></cite>
-      </footer>
-    </blockquote>
-  </section>
-
-  <section class="contact">
-    <h3>Get In Touch</h3>
-    <p>Zinc is always on the look out for new clients to delight. Email us: <a href="mailto: yo@zincma.de">yo@zincma.de</a>.</p>
-  </section>
-
-  </main>
-  <footer>
-    &copy; 2015 Zinc Technology Inc
-  </footer>
-</body>
-</html>
+    <footer>
+      <cite>Jeff Langr, <a href="http://langrsoft.com">Technical Lead and Author</a></cite>
+    </footer>
+  </blockquote>
+</section>
