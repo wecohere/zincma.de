@@ -14,7 +14,8 @@ tags:
 There are three main things a product company spends time and energy on:
 
 * Building the product/services
-* Tuning the engine of growth
+* Tuning the engine of growth (The tactics for converting non-customers into
+  customers)
 * Feeding the engine of growth
 
 Many companies direct most of their focus on building the product or service's
