@@ -6,8 +6,8 @@
  $base-line-multi: 4;
  $base-font-size: 16px;
  $ms-ratio: 1.414;
- $paragraph-indent: true;
- $paragraph-justify: true;
+ $paragraph-indent: false;
+ $paragraph-justify: false;
  $load-typesetted: true;
 
  @import "typesettings/typesettings"; // Here is the _typesettings.scss partial
