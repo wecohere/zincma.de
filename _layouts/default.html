@@ -7,14 +7,14 @@
 
 <body>
   <header>
-    <h1>Zinc - {{ page.title }}</h4>
+    <h1>Zinc{% if page.title %} - {{ page.title }}{% endif %}</h1>
   </header>
   <main>
   {{ content }}
   <section class="contact">
     <h3>Get In Touch</h3>
     <p>Zinc is always on the look out for new clients to delight. Email us: <a
-           href="mailto: yo@zincma.de">yo@zincma.de</a>.</p>
+           href="mailto: hello@zincma.de">hello@zincma.de</a>.</p>
   </section>
   </main>
   <footer>
