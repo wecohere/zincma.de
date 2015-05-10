@@ -1,0 +1,110 @@
+---
+title:
+---
+<section id="services">
+  <article>
+    <header>
+      <h3>Product Delivery</h3>
+    </header>
+    <main>
+      <p>You want well-designed, reliable software that delight your customers.
+      We leverage user-centered design, customer development, lean principles,
+      and rigorous software development practices to deliver software that not
+      only works well, but puts the user first.</p>
+    </main>
+  </article>
+
+  <article>
+    <header>
+      <h3>Coaching and Training</h3>
+    </header>
+    <main>
+      <p>What's the point of a coach if they don't have real world expertise?
+      We use our experience solving problems in the real world to help your
+      teams and leadership adopt new techniques and technologies as well as
+      hone the fundamental skills technology teams have used to succeed for
+      decades.</p >
+    </main>
+  </article>
+
+  <article>
+    <header>
+      <h3>Placements</h3>
+    </header>
+    <main>
+      <p>You need team members who both have a solid grasp of the fundamentals
+      as well as capable of working with new technologies. We provide your new
+      hires with personalized mentoring and training that equips them with the
+      leading-edge skills your team needs while reinforcing the
+      fundamentals.</p>
+    </main>
+  </article>
+</section>
+
+<section class="articles">
+  <h3>What We're Doing</h3>
+  {% for post in site.posts %}
+    <article>
+      <header>
+        <h3 id="{{ post.title | handleize }}"><a href="{{post.url}}">{{ post.title }}</a></h3>
+      </header>
+      <main>
+      {{ post.excerpt }}
+      </main>
+      <footer>
+        <a href="{{ post.url }}">Read More</a>
+      </footer>
+    </article>
+  {% endfor %}
+</section>
+
+<section class="testimonials">
+  <h3>What Our Clients Say</h3>
+
+  <blockquote>
+    <q>When I was 7, I built a cubby house under a big old tree and made it
+      with cardboard boxes.  It rained. The thing couldn't cope and fell
+      apart.<br /><br />
+
+      If you want to build something robust, use the resources that set the
+      right foundation that will last.<br /><br />
+
+      Zee ensured we didn't build a cardboard cubby house with our product.<br /><br />
+
+      His experience, mentorship and skills in the craft of building solid
+      applications set us on the right path.<br /><br />
+
+      Looking forward to working with him again soon.
+    </q>
+
+    <footer>
+      <cite>Adam Broadway, CTO of <a href="https://near-me.com">Near
+          Me</a></cite>
+    </footer>
+  </blockquote>
+  <blockquote>
+    <q>Zee is an excellent teacher and
+      facilitator of group learning. He is patient and funny
+      and asks the right questions to get people thinking.
+      He is clearly passionate about programming and
+      constantly improving his own skills, and that
+      excitement is contagious.I've really enjoyed learning
+      Ruby on Rails, TDD, and new ways to think about
+      programming challenges from him.</q>
+    <footer>
+      <cite>Danielle Gellis, Software Developer</cite>
+    </footer>
+  </blockquote>
+  <blockquote>
+    <q>Zee is one of the more passionate developers I've
+      worked with. His work is impeccable, as he takes the
+      utmost care to craft it. Zee is great to work with, he
+      is patient and explains things well. I thoroughly
+      enjoyed pairing with him, and felt he brought a needed
+      quality of excellence to our team.</q>
+
+    <footer>
+      <cite>Jeff Langr, <a href="http://langrsoft.com">Technical Lead and Author</a></cite>
+    </footer>
+  </blockquote>
+</section>

@@ -1,0 +1,33 @@
+$font-sans: 'ATCOverlook', Helvetica, Arial, sans-serif;
+$font-serif: 'Merriweather', 'Georgia', 'Times New Roman', serif;
+$font-mono: 'Lucida Console', Monaco, monospace;
+$text-color: #000;
+$base-vertical-unit: 6px;
+$base-line-multi: 4;
+$base-font-size: 16px;
+$ms-ratio: 1.414;
+$paragraph-indent: false;
+$paragraph-justify: false;
+$load-typesetted: true;
+
+@include font-face("ATCOverlook", "/assets/fonts/ATCOverlook-Regular", $file-formats: eot woff ttf svg);
+@include font-face("Merriweather", "/assets/fonts/Merriweather-Regular", $file-formats: ttf);
+
+@import "typesettings/typesettings"; // Here is the _typesettings.scss partial
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: none;
+}
+p { max-width: 100%; }
+
+a {
+  color: $links;
+}
+
+blockquote {
+  border-color: $links;
+}
+
+h1,h2,h3,h4,h5 {
+  a { text-decoration: none; }
+}
