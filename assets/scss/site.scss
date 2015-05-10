@@ -1,0 +1,85 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "colors";
+@import "typography";
+
+$mobile: new-breakpoint(max-width 720px 4);
+$tablet: new-breakpoint(min-width 720px 12);
+
+body {
+  padding: emRhythm(1, $ms-down1);
+  color: white;
+  background-color: $background;
+}
+
+body > main::before {
+  content: "";;
+  background: url(/assets/images/filled-logo.svg);
+  opacity: 0.05;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+body > header, body > main, body > footer {
+  @include outer-container;
+  margin-bottom: emRhythm(3, $ms-down1);
+}
+
+q {
+  quotes: "“" "”" "‘" "’";
+  &:before {
+    content: open-quote;
+  }
+  &:after {
+    content: close-quote;
+  }
+}
+
+main > section {
+  margin-bottom: emRhythm(3, $ms-down1);
+  @include span-columns(12);
+}
+
+#services {
+  article {
+    @include media($mobile) {
+      @include span-columns(4);
+    }
+
+      @include span-columns(4);
+      @include omega(3n);
+  }
+}
+.testimonials {
+  blockquote {
+    @include media($mobile) {
+
+      &:first-of-type {
+        @include span-columns(4);
+      }
+      @include span-columns(4);
+    }
+    &:first-of-type {
+      @include span-columns(12);
+    }
+    @include span-columns(6);
+    margin-bottom: emRhythm(1, $ms-down1);
+  }
+}
+
+main > .contact {
+  @include media($mobile) {
+    @include span-columns(4);
+  }
+  @include media($tablet) {
+    @include span-columns(8);
+    @include shift(2);
+  }
+}

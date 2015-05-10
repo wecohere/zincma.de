@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="65px" height="65px" viewBox="0 0 65 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch -->
+    <title>filled-logo@Svg</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="filled-logo" sketch:type="MSArtboardGroup" stroke="#FFFFFF" stroke-linejoin="round">
+            <g id="Stroke-1-+-Stroke-2-+-Stroke-3" sketch:type="MSLayerGroup" transform="translate(6.500000, 3.500000)">
+                <path d="M13.031,20.288 L31.403,9.682 L23.565,38.534 L41.936,27.928" id="Stroke-1" stroke-width="4" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <path d="M51.668,30.641 L33.991,0.023 L3.372,17.7 L21.051,48.318 L51.668,30.641 L51.668,30.641 Z" id="Stroke-2" stroke-width="2" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+                <path d="M51.668,30.641 L33.991,0.023 L3.372,17.7 L0.783,27.359 L18.461,57.977 L49.08,40.3 L51.668,30.641 L51.668,30.641 Z" id="Stroke-3" stroke-width="2" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
