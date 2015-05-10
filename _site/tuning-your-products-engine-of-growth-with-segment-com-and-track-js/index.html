@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<head>
+  <title>Tuning your product's engine of growth with Segment and Track.js</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/site.css" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h1>ZINC - Tuning your product's engine of growth with Segment and Track.js</h1>
+  </header>
+  <main>
+  <p>There are three main things a product company spends time and energy on:</p>
+
+<ul>
+  <li>Building the product/services</li>
+  <li>Tuning the engine of growth (The tactics for converting non-customers into
+customers)</li>
+  <li>Feeding the engine of growth</li>
+</ul>
+
+<p>Many companies direct most of their focus on building the product or service’s
+features and feeding the engine of growth. This is great and useful! After all,
+we can’t tune the engine of growth without a viable product and enough
+interest!</p>
+
+<p>When we ignore tuning the engine of growth, we’re relying on well-educated
+guesses about what is valuable without verifying impact; which means we’re be
+spending time on stuff that, while interesting and useful, doesn’t move the
+needle on the business’s goals.</p>
+
+<p>In order to tune our engine of growth, we must instrument our product to make it
+easy to answer the following questions:</p>
+
+<ul>
+  <li>What is the percentage of (new visitors, previous visitors, registered users,
+frequent users, etc.) that make a further commitment to our product or service?
+(Say, signing up for a newsletter, creating an account, making a payment,
+creating a support ticket, referring a friend, sharing on Twitter, etc.)</li>
+  <li>What interesting/shared characteristics do people with high inter-funnel
+conversion rates have?</li>
+  <li>How did a release or change in marketing copy impact these inter-funnel
+conversion rates?</li>
+</ul>
+
+<p>Until we can answer these questions, we’re relying on our human judgement. By
+building in mechanisms for answering these questions we begin to <em>test and
+verify</em> how the work we do has an impact on our business objectives. As we learn
+what value propositions move the needle on our engine of growth, we can further
+tune the work we do to focus on the features, market segment, or value
+proposition that both aligns with our mission and resonates with a sustainable
+amount of people.</p>
+
+<p>Now, this all sounds tough. After all, It’s huge and nearly impossible to take
+in one giant gulp. If we want to build this system of “checks and balances” on
+our judgement, here’s how we could go about it:</p>
+
+<h3 id="step-1-list-key-user-activities">Step 1: List Key User Activities.</h3>
+<p>This is by no means an exhaustive list, I recommend doing a <a href="http://en.wikipedia.org/wiki/Card_sorting">card-sorting
+exercise</a> to generate these for your
+product or service.</p>
+
+<ul>
+  <li>Discovering service</li>
+  <li>Investigating service</li>
+  <li>Beginning sign-up</li>
+  <li>Moving through fields in sign-up</li>
+  <li>Completing sign-up</li>
+  <li>Making payment</li>
+  <li>Emailing support</li>
+  <li>Making another purchase</li>
+  <li>Sharing our service</li>
+  <li>Referring our product to a friend</li>
+  <li>Canceling service</li>
+</ul>
+
+<p>Note these are <em>not UI Events</em>. They are <em>actions people take</em>. We instrument
+our API, applications, supporting services, and marketing content to track these
+actions, <em>not</em> just what buttons or links were clicked or what gestures were
+used.</p>
+
+<h3 id="step-2-split-activities-into-categories-of-actions">Step 2: Split Activities into Categories of Actions</h3>
+<p>While each activity is useful to track, they become more powerful if they are
+categorized. This allows us to use funnels more effectively.</p>
+
+<p>We’ve found the following categories to be useful:</p>
+
+<ul>
+  <li>Discovery Actions (Visiting a landing page or piece of critical content)</li>
+  <li>Exploring Actions (Investigating our about page, checking prices, following
+links to press, reading newsletter archives, etc.)</li>
+  <li>Committing Actions (Signing up for a newsletter, following on twitter,
+beginning sign-up, etc.)</li>
+  <li>Paying Actions (Making a payment)</li>
+  <li>Customer-Value-Generating Actions (Using the service in a way we think is
+useful)</li>
+  <li>Growth Actions (Referring a friend, tweeting, and other “viral” channels)</li>
+</ul>
+
+<h4 id="step-2b-identify-what-categories-of-actions-or-activity-a-work-task-is-targeting-before-building-it">Step 2b: Identify What Categories of Actions or Activity A Work Task is Targeting Before Building It</h4>
+<p>This helps us determine how good we are at “calling our shots” about how tasks
+impact our engine of growth. This doesn’t require instrumentation; so long as
+you’re releasing features independently and giving them time to make a
+statistically significant impact.</p>
+
+<h4 id="step-2c-instrument-each-features-usage-activity">Step 2c: Instrument Each Feature’s Usage Activity</h4>
+<p>This lets us track a feature’s real impact on usage, and tie it directly to
+our service’s engine of growth. It takes a bit of effort, but provides a lot of
+value.</p>
+
+<h3 id="step-3-segment-our-users">Step 3: Segment Our Users</h3>
+<p>If we want to glean insights into how we to direct our marketing and sales
+efforts, we’ll want to segment our users based on whatever data we can get.
+These segments could be:</p>
+
+<ul>
+  <li>Origin(s) (press, social media, marketing campaign, search, link)</li>
+  <li>Target persona (socialite, traveler, ???)</li>
+  <li>Relationship: (unregistered, recently signed in, recently bought,
+recently referred a friend, etc.)</li>
+  <li>Location (zip code, city, possibly even conference or place of business, etc.)</li>
+  <li>And more, depending on how detailed we want to go.</li>
+</ul>
+
+<p>All this is hard work. There’s dozens of services that need to be integrated,
+and as we build out multiple apps, supporting tools, etc., we quickly realized
+<em>there’s too many different use cases for us to use a single tool</em> in our
+insight strategy.</p>
+
+<h3 id="enter-segmentcom">Enter Segment.com</h3>
+
+<p><a href="http://segment.com">Segment.com</a> creates an abstraction layer around sending
+events to analytics providers. With a single JavaScript, Ruby, iOS, or Android
+library you can interact with literally
+<a href="https://segment.com/integrations">hundreds</a> of different analytics, sales,
+customer support, user-testing, marketing automation, and advertising tools.</p>
+
+<p>While Segment’s JavaScript library is fantastic, we find it’s a little bit
+clunky and obscures the semantic meaning of <em>why</em> an event is being tracked.</p>
+
+<h3 id="and-introducing-trackjs">And Introducing Track.js</h3>
+
+<p>To instrument our applications with semantically meaningful user actions, we
+extracted <a href="https://github.com/zincmade/track.js">Track.js</a>. Track.js wraps
+<a href="http://segment.com">Segment.com</a> and makes it easy to instrument JavaScript
+applications that work with a variety of <a href="https://segment.com/integrations">analytics
+providers</a>.</p>
+
+<p>At the moment, we consider Track.js “pre-release” software, so use it at your
+own risk. We’re excited to build Track.js out as we use it across more projects.
+If you’re interested in contributing, we’ve got an <a href="https://waffle.io/zincmade/track.js">issue
+tracker</a> primed and ready for you!</p>
+
+  <section class="contact">
+    <h3>Get In Touch</h3>
+    <p>Zinc is always on the look out for new clients to delight. Email us: <a
+           href="mailto: hello@zincma.de">hello@zincma.de</a>.</p>
+  </section>
+  </main>
+  <footer>
+    &copy; 2015 Zinc Technology Inc
+  </footer>
+</body>
+</html>
