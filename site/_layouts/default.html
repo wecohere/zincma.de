@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+  <title>{{ page.title }}</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/site.css" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h1>ZINC{% if page.title %} - {{ page.title }}{% endif %}</h1>
+  </header>
+  <main>
+  {{ content }}
+  <section class="contact">
+    <h3>Get In Touch</h3>
+    <p>Zinc is always on the look out for new clients to delight. Email us: <a
+           href="mailto: hello@zincma.de">hello@zincma.de</a>.</p>
+  </section>
+  </main>
+  <footer>
+    &copy; 2015 Zinc Technology Inc
+  </footer>
+</body>
+</html>

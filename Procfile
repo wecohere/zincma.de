@@ -1,2 +1,2 @@
 jekyll: bin/jekyll serve
-sass: bin/sass --watch assets/scss:assets/css
+sass: bin/sass --watch site/assets/scss:site/assets/css

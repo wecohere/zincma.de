@@ -1,0 +1,61 @@
+Avondale Type Co., Avondale Type Company LLC
+
+Commercial License Agreement*
+
+*If You use any Avondale Type Co. Fonts for commercial/client work, You must purchase a Commercial License.
+
+This License Agreement (“Agreement”) is a legally binding contract between You and the Avondale Type Company LLC. (“ATC”). When You purchase a Font, You are purchasing the right to use that Font under a particular set of conditions. These conditions range from, for example, how many computers the Font can be installed on to whether it can be embedded in digital documents. It is important to read and understand this Agreement because it defines Your rights, the acceptable uses of our Fonts, and the rights ATC reserves. If You believe Your usage or need is not addressed, or if You are unsure of the meaning of any term or condition, please email us before You purchase.
+
+Downloading, installing or using ATC Fonts indicates Your confirmation that You understand and consent to the terms of this Agreement, and that You have the authority to bind the person or entity specified on Your sales receipt (“licensee”) to the terms of this Agreement. Upon payment in full, ATC grants You a non-exclusive, non-transferable, revocable license to use our Fonts under the following terms and conditions.
+
+1. Definitions 
+In this Agreement, “Font”, “Fonts” or “Font Software” have identical meanings and are defined as the designs of the Fonts and the Software identified on Your sales receipt that produces a Typeface design(s) together with any other artworks that may be associated with the Font.
+“You”, “Your” and the “End User” are defined as and refer to a customer who has purchased a license to use the Font. An End User is not defined as a distributor, reseller, dealer, sub-licensee, original equipment manufacturer (“OEM”), or other wholesale buyer, etc. ATC products may not be distributed and/or sold to third parties without prior written consent from ATC.
+
+2. Permitted Usage and Restrictions 
+Installation
+Fonts may be installed and used only on personal computers/devices. Fonts may not be stored or used in any manner that makes them accessible to the public or non-licensed third parties. For the purposes of clarity, this license is for individual users or organizations purchasing for authorized employees only. Under no circumstances may the licensed Font be shared with contractors, freelance employees, or affiliates.
+
+Service Bureau/Printer Use
+To reproduce a particular document, You may provide a copy of the specified Fonts to a commercial printer or service bureau. Afterwards, the printer or service bureau must destroy the copies of the Fonts.
+
+Back-up Copies
+You may make a reasonable number of copies of the Font Software for back-up purposes only. Copies must contain the same documentation, copyright, trademark, and other proprietary notices that appear on, in or with the Fonts.
+
+Embedding of Fonts
+The embedding of Fonts into digital documents is permitted so long as i) the Font Software is subset, ii) the document text can be viewed and printed but not edited, and iii) reasonable measures are taken to ensure recipients of such documents cannot extract or use the embedded Fonts. Rasterized copies of images showing the Font are permitted provided the images do not result in all or substantially all of the characters comprising the Font. If the resulting images show most or all of the Font characters, a rasterized showing of the Font is not permitted.
+@font-face and .woff
+You are free to use any ATC Font (both .otf and .woff) with @font-face under this Agreement for any website up to 250,000 views per 12 months. For any usage on websites over 250,000 views per 12 months, please contact Avondale Type Co. for a special licensing agreement.
+
+Hardware and Software
+This License expressly prohibits the embedding, inclusion, calling or linking of the Font Software within hardware and software in any form whatsoever. This includes, but is not limited to, mobile apps, video games, server-side applications, online document creation and OEM products or software. If You wish to use the Fonts for such purposes, please contact ATC. Notwithstanding, rasterized images of limited text and/or logos created using the Font Software are permitted.
+
+Modifications
+You may create outline artworks based upon the Font Software for Your personal or business use. However, the use of any Font creation or Font manipulation program or any attempt to modify the Font for the purposes of creating a usable, derivative or substitute version of the Font is prohibited. Under no circumstances may You modify, adapt, translate, reverse engineer, decompile, disassemble, alter, or otherwise attempt to discover the source code of the Font Software or the designs embodied therein. You further agree not to commission or authorize any third party to undertake modifications to the Fonts without prior written consent from ATC.
+
+Restriction as Goods for Sale, Enterprise Licenses, Distribution To Outside Parties
+This License expressly prohibits the use of the Font Software in the creation of alphabet products such as, but not limited to: house numbers, stamp sets, rub-on letters, adhesive alphabet letters, alphabet punch and die sets or other methods for use in making such products as well as Enterprise Licenses, or Distribution to any outside parties. Any such use requires the purchase of a special license. If You are looking to contact us for usage on goods for sale, please contact us.
+Rights Reserved 
+You expressly acknowledge that the Font Software, the designs embodied therein, the trade names and/or trademarks and copyrights associated therewith are each the exclusive property of ATC. All rights not expressly granted under this License are reserved to ATC.
+You agree that the Fonts and the design of the Fonts embodied therein are owned by ATC and the Fonts’ structure, organization and code are the valuable trade secrets of ATC. You acknowledge that the Fonts are, among other means, protected under United States trademark and/or copyright law, by the trademark and/or copyright and design laws of other nations, and by international treaties.
+4. Warranty and Limitation of Liability 
+ATC represents and warrants that the Fonts will perform substantially in accordance with the representations made herein. To make a warranty claim, You must notify the source from which You obtained the Font Software together with a copy of Your sales receipt. If the Font does not perform substantially in accordance with the representations, the entire and exclusive liability and remedy shall be limited to the replacement of the Font Software or the refund of the license fee You paid for the Fonts, as an authorized officer of ATC may elect. ATC and its suppliers do not and cannot warrant the performance or results You may obtain by using the Font Software.
+
+ATC EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. ATC DOES NOT WARRANT THAT THE OPERATION OF THE FONTS WILL BE UNIMPEDED, UNINTERRUPTED OR ERROR-FREE, OR THAT THE FONTS ARE WITHOUT DEFECTS. WITHOUT LIMITING THE FOREGOING UNDER NO CIRCUMSTANCES SHALL ATC BE LIABLE TO YOU OR ANY OTHER PARTY, WHETHER IN CONTRACT OR TORT (INCLUDING NEGLIGENCE) OR OTHERWISE, FOR ANY SPECIAL, CONSEQUENTIAL, OR INCIDENTAL DAMAGES, INCLUDING LOST PROFITS, LOST SAVING, LOSS OF DATA, SAVINGS OR BUSINESS INTERRUPTION AS A RESULT OF THE USE OF OR THE INABILITY TO USE THE FONTS EVEN IF NOTIFIED IN ADVANCE OF SUCH POSSIBILITY.
+IN NO EVENT SHALL ATC, OR ANY PARENT, SUBSIDIARY, AFFILIATE, DIRECTOR, OFFICER, EMPLOYEE, LICENSOR, DISTRIBUTOR, SUPPLIER, AGENT, RESELLER, OWNER, OR OPERATOR OF ATC, BE LIABLE TO YOU FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, OR CONSEQUENTIAL DAMAGES WHATSOEVER OR LOST PROFITS RESULTING FROM (I) ANY USE OF THE FONTS, (II) ERRORS, MISTAKES, OR INACCURACIES OF THE FONTS, (III) PERSONAL INJURY OR PROPERTY DAMAGE, OF ANY NATURE WHATSOEVER, RESULTING FROM THE USE OF THE FONTS,  WHETHER BASED ON WARRANTY, CONTRACT, TORT, OR ANY OTHER LEGAL THEORY, AND WHETHER OR NOT ATC IS ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THE FOREGOING LIMITATION OF LIABILITY SHALL APPLY TO THE FULLEST EXTENT PERMITTED BY LAW IN THE APPLICABLE JURISDICTION.
+
+Other law, Non-Business Users Only. Some jurisdictions do not allow the exclusion or limitation of incidental, consequential or special damages, or implied warranties. Any implied warranty or other right created by law is only effective for the ninety (90) day warranty period. There are no warranties or conditions of any kind after the ninety (90) day warranty period. To the extent permissible by law, You agree that all implied warranties are not to be effective for more than thirty (30) days. The terms and conditions of this License are contractual in nature. By downloading, installing and using the Fonts, You acknowledge You have read, understood, and agreed to be bound by the terms and conditions of this License Agreement.
+
+5. Termination 
+Any breach of the terms of this License shall be cause for immediate termination without the obligation of notice or opportunity to cure. ATC shall be entitled to seek any and all remedies under law or equity, without limitation, including injunctive relief without the obligation of posting security or bond. You agree to immediately discontinue using or return the Font Software to ATC and certify that no copy remains in Your possession or control.
+
+6. Choice of Law 
+You expressly agree that this Agreement shall be governed by the laws of the State of Illinois, USA, as they apply to contracts wholly performed therein and without respect to its conflict of laws provisions or the conflict of laws provisions of any other jurisdiction. You expressly submit to the jurisdiction of the state and federal courts in the forum selected by ATC for the purposes of resolving any dispute arising under this Agreement and You expressly waive all defenses arising out of the selection of the jurisdiction and forum elected by ATC for the resolution of any dispute and agree to service of ATC by mail. You hereby expressly agree that the application of the United Nations Convention of Contracts for the International Sale of Goods is expressly excluded. This Agreement may only be modified in writing, signed by an authorized officer of ATC.
+
+7. No Other Agreements 
+This Agreement represents the complete and exclusive statement of the agreement between You and ATC and it supersedes any proposal or prior agreement, oral or written, and any other communications relating to the subject matter of this Agreement. No variation of the terms of this Agreement or any different terms will be enforceable against ATC in the absence of an express written amendment or consent, including a written express waiver of the affected terms of this Agreement. If any provision of this Agreement is declared by a court of competent jurisdiction to be invalid, void or unenforceable, the remaining provisions of this Agreement shall continue in full force and effect, and the invalid provision shall be replaced by ATC with a provision that effects the intent of the invalid provision.
+8. Miscellaneous 
+This License may be amended by the written agreement of the parties. ATC expressly reserves the right to amend or modify future versions of this License Agreement at any time and without prior notification.
+The numberings of the various sections are for convenience only and shall not affect or control the interpretation and enforcement of this Agreement.
+
+Updated 2/6/2015
