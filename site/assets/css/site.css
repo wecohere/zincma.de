@@ -198,6 +198,9 @@ a {
 blockquote {
   border-color: #b3d7fb; }
 
+h5 {
+  font-style: oblique; }
+
 h1 a, h2 a, h3 a, h4 a, h5 a {
   text-decoration: none; }
 
@@ -265,6 +268,27 @@ main > section {
     margin-right: 0; }
   #services article:nth-child(3n+1) {
     clear: left; }
+
+@media screen and (max-width: 720px) {
+  .team article {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 100%; }
+    .team article:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 720px) {
+  .team article {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    .team article:last-child {
+      margin-right: 0; }
+    .team article:nth-child(4n) {
+      margin-right: 0; }
+    .team article:nth-child(4n+1) {
+      clear: left; } }
 
 .testimonials blockquote {
   float: left;
