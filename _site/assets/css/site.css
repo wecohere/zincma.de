@@ -274,9 +274,13 @@ main > section {
     float: left;
     display: block;
     margin-right: 7.42297%;
-    width: 100%; }
+    width: 46.28851%; }
     .team article:last-child {
-      margin-right: 0; } }
+      margin-right: 0; }
+    .team article:nth-child(2n) {
+      margin-right: 0; }
+    .team article:nth-child(2n+1) {
+      clear: left; } }
 @media screen and (min-width: 720px) {
   .team article {
     float: left;
