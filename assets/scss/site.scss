@@ -60,7 +60,8 @@ main > section {
 .team {
   article {
     @include media($mobile) {
-      @include span-columns(4);
+      @include span-columns(2);
+      @include omega(2n);
     }
     @include media($tablet) {
       @include span-columns(3);
