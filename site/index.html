@@ -67,7 +67,9 @@ title:
     {% for team_member in site.team %}
       <article>
         <header>
-          <h4>{{ team_member.name }}</a></h4>
+          <h4>
+            <a href="{{ team_member.canonical_url }}">{{ team_member.name }}</a>
+          </h4>
           <h5>{{ team_member.title }}</h5>
           <q>{{ team_member.catch_phrase }}</q>
           <h6>Super Powers</h6>
