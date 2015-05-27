@@ -58,6 +58,32 @@ title:
   {% endfor %}
 </section>
 
+<section class="team">
+  <a name="team"></a>
+  <header>
+    <h3>Who We Are</h3>
+  </header>
+    <div class="content">
+    {% for team_member in site.team %}
+      <article>
+        <header>
+          <h4>
+            <a href="{{ team_member.canonical_url }}">{{ team_member.name }}</a>
+          </h4>
+          <h5>{{ team_member.title }}</h5>
+          <q>{{ team_member.catch_phrase }}</q>
+          <h6>Super Powers</h6>
+          <ol>
+            {% for skill in team_member.skills %}
+              <li>{{ skill }}</li>
+            {% endfor %}
+          </ol>
+        </header>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
 <section class="testimonials">
   <h3>What Our Clients Say</h3>
 
