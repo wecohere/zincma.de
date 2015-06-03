@@ -1,15 +1,15 @@
 @import "bourbon/bourbon";
-@import "neat/neat";
 @import "colors";
 @import "typography";
+@import "media";
+$tablet-plus: "min-width: 720px";
+@import "grid";
 
-$mobile: new-breakpoint(max-width 720px 4);
-$tablet: new-breakpoint(min-width 720px 12);
 
-body {
-  padding: emRhythm(1, $ms-down1);
-  color: white;
+body {;
   background-color: $background;
+  padding: emRhythm(3);
+  color: white;
 }
 
 body > main::before {
@@ -27,10 +27,21 @@ body > main::before {
   z-index: -1;
 }
 
-body > header, body > main, body > footer {
-  @include outer-container;
-  margin-bottom: emRhythm(3, $ms-down1);
+a.btn {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  line-height: $ms-up3;
+  height: $ms-up3;
+  border-radius: .5em;
+  background-color: white;
+  box-shadow: .1em .1em .1em #444;
+  color: $background;
+  font-size: $ms-up1;
+  text-decoration: none;
+  font-family: $font-sans;
 }
+
 
 q {
   quotes: "“" "”" "‘" "’";
@@ -42,44 +53,29 @@ q {
   }
 }
 
-main > section {
-  margin-bottom: emRhythm(3, $ms-down1);
-  @include span-columns(12);
-}
-
 #services {
-  article {
-    @include media($mobile) {
-      @include span-columns(4);
-    }
-
-      @include span-columns(4);
-      @include omega(3n);
-  }
+  @include row(2);
 }
-.testimonials {
-  blockquote {
-    @include media($mobile) {
 
-      &:first-of-type {
-        @include span-columns(4);
-      }
-      @include span-columns(4);
-    }
-    &:first-of-type {
-      @include span-columns(12);
-    }
-    @include span-columns(6);
-    margin-bottom: emRhythm(1, $ms-down1);
+.articles {
+  @include row(1);
+}
+
+#testimonials {
+  @include row(2);
+  article:first-of-type {
+    flex: 1 1 100%;
   }
 }
 
-main > .contact {
-  @include media($mobile) {
-    @include span-columns(4);
+main > .contact, body > footer{
+  @include media($tablet-plus) {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
   }
-  @include media($tablet) {
-    @include span-columns(8);
-    @include shift(2);
-  }
+}
+
+#training {
+  @include row(2);
 }

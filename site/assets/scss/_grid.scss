@@ -1,0 +1,41 @@
+.spaced-vertically {
+  margin-bottom: emRhythm(4);
+  margin-top: emRhythm(2);
+}
+@mixin row($count) {
+  @extend .spaced-vertically;
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  justify-content: space-around;
+  > header {
+    flex: 1 100%;
+  }
+  article {
+    @extend .spaced-vertically;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+    @include media($tablet-plus) {
+      padding-right: $ms-up2;
+
+      &:nth-child(#{$count}) {
+        padding-right: 0;
+      }
+
+      flex: 0 0 (100% / $count);
+    }
+
+    > .content {
+      flex: 1;
+      height: 100%;
+    }
+  }
+}

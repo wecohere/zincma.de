@@ -1,14 +1,4 @@
 @charset "UTF-8";
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit; }
-
 @font-face {
   font-family: "ATCOverlook";
   font-style: normal;
@@ -196,15 +186,20 @@ a {
   color: #b3d7fb; }
 
 blockquote {
+  margin: 0;
   border-color: #b3d7fb; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a {
   text-decoration: none; }
 
+.spaced-vertically, #services, #services article, .articles, .articles article, #testimonials, #testimonials article, #training, #training article {
+  margin-bottom: 1.5em;
+  margin-top: 0.75em; }
+
 body {
-  padding: 0.53025em;
-  color: white;
-  background-color: #871487; }
+  background-color: #871487;
+  padding: 1.125em;
+  color: white; }
 
 body > main::before {
   content: "";
@@ -220,15 +215,19 @@ body > main::before {
   position: fixed;
   z-index: -1; }
 
-body > header, body > main, body > footer {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.59075em; }
-  body > header::after, body > main::after, body > footer::after {
-    clear: both;
-    content: "";
-    display: table; }
+a.btn {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  line-height: 2.82715em;
+  height: 2.82715em;
+  border-radius: .5em;
+  background-color: white;
+  box-shadow: .1em .1em .1em #444;
+  color: #871487;
+  font-size: 1.414em;
+  text-decoration: none;
+  font-family: "ATCOverlook", Helvetica, Arial, sans-serif; }
 
 q {
   quotes: "“" "”" "‘" "’"; }
@@ -237,82 +236,124 @@ q {
   q:after {
     content: close-quote; }
 
-main > section {
-  margin-bottom: 1.59075em;
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%; }
-  main > section:last-child {
-    margin-right: 0; }
+#services {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  justify-content: space-around; }
+  #services > header {
+    flex: 1 100%; }
+  #services article {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box; }
+    @media screen and (min-width: 720px) {
+      #services article {
+        padding-right: 1.9994em;
+        flex: 0 0 50%; }
+        #services article:nth-child(2) {
+          padding-right: 0; } }
+    #services article > .content {
+      flex: 1;
+      height: 100%; }
 
-#services article {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 31.76157%; }
-  @media screen and (max-width: 720px) {
-    #services article {
-      float: left;
-      display: block;
-      margin-right: 7.42297%;
-      width: 100%; }
-      #services article:last-child {
-        margin-right: 0; } }
-  #services article:last-child {
-    margin-right: 0; }
-  #services article:nth-child(3n) {
-    margin-right: 0; }
-  #services article:nth-child(3n+1) {
-    clear: left; }
+.articles {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  justify-content: space-around; }
+  .articles > header {
+    flex: 1 100%; }
+  .articles article {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box; }
+    @media screen and (min-width: 720px) {
+      .articles article {
+        padding-right: 1.9994em;
+        flex: 0 0 100%; }
+        .articles article:nth-child(1) {
+          padding-right: 0; } }
+    .articles article > .content {
+      flex: 1;
+      height: 100%; }
 
-.testimonials blockquote {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-  margin-bottom: 0.53025em; }
-  @media screen and (max-width: 720px) {
-    .testimonials blockquote {
-      float: left;
-      display: block;
-      margin-right: 7.42297%;
-      width: 100%; }
-      .testimonials blockquote:first-of-type {
-        float: left;
-        display: block;
-        margin-right: 7.42297%;
-        width: 100%; }
-        .testimonials blockquote:first-of-type:last-child {
-          margin-right: 0; }
-      .testimonials blockquote:last-child {
-        margin-right: 0; } }
-  .testimonials blockquote:first-of-type {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%; }
-    .testimonials blockquote:first-of-type:last-child {
-      margin-right: 0; }
-  .testimonials blockquote:last-child {
-    margin-right: 0; }
+#testimonials {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  justify-content: space-around; }
+  #testimonials > header {
+    flex: 1 100%; }
+  #testimonials article {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box; }
+    @media screen and (min-width: 720px) {
+      #testimonials article {
+        padding-right: 1.9994em;
+        flex: 0 0 50%; }
+        #testimonials article:nth-child(2) {
+          padding-right: 0; } }
+    #testimonials article > .content {
+      flex: 1;
+      height: 100%; }
+  #testimonials article:first-of-type {
+    flex: 1 1 100%; }
 
-@media screen and (max-width: 720px) {
-  main > .contact {
-    float: left;
-    display: block;
-    margin-right: 7.42297%;
-    width: 100%; }
-    main > .contact:last-child {
-      margin-right: 0; } }
 @media screen and (min-width: 720px) {
-  main > .contact {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%;
-    margin-left: 17.05961%; }
-    main > .contact:last-child {
-      margin-right: 0; } }
+  main > .contact, body > footer {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto; } }
+
+#training {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  justify-content: space-around; }
+  #training > header {
+    flex: 1 100%; }
+  #training article {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box; }
+    @media screen and (min-width: 720px) {
+      #training article {
+        padding-right: 1.9994em;
+        flex: 0 0 50%; }
+        #training article:nth-child(2) {
+          padding-right: 0; } }
+    #training article > .content {
+      flex: 1;
+      height: 100%; }
 
 /*# sourceMappingURL=site.css.map */
