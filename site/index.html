@@ -4,18 +4,6 @@ title:
 <section id="services">
   <article>
     <header>
-      <h3>Product Delivery</h3>
-    </header>
-    <main>
-      <p>You want well-designed, reliable software that delights your
-      customers.  We leverage user-centered design, customer development, lean
-      principles, and rigorous software development practices to deliver
-      software that not only works well, but puts the user first.</p>
-    </main>
-  </article>
-
-  <article>
-    <header>
       <h3>Coaching and Training</h3>
     </header>
     <main>
@@ -26,62 +14,6 @@ title:
       decades.</p >
     </main>
   </article>
-
-  <article>
-    <header>
-      <h3>Placements</h3>
-    </header>
-    <main>
-      <p>You need team members who both have a solid grasp of the fundamentals
-      as well as capable of working with new technologies. We provide your new
-      hires with personalized mentoring and training that equips them with the
-      leading-edge skills your team needs while reinforcing the
-      fundamentals.</p>
-    </main>
-  </article>
-</section>
-
-<section class="articles">
-  <h3>What We're Doing</h3>
-  {% for post in site.posts %}
-    <article>
-      <header>
-        <h3 id="{{ post.title | handleize }}"><a href="{{post.url}}">{{ post.title }}</a></h3>
-      </header>
-      <main>
-      {{ post.excerpt }}
-      </main>
-      <footer>
-        <a href="{{ post.url }}">Read More</a>
-      </footer>
-    </article>
-  {% endfor %}
-</section>
-
-<section class="team">
-  <a name="team"></a>
-  <header>
-    <h3>Who We Are</h3>
-  </header>
-    <div class="content">
-    {% for team_member in site.team %}
-      <article>
-        <header>
-          <h4>
-            <a href="{{ team_member.canonical_url }}">{{ team_member.name }}</a>
-          </h4>
-          <h5>{{ team_member.title }}</h5>
-          <q>{{ team_member.catch_phrase }}</q>
-          <h6>Super Powers</h6>
-          <ol>
-            {% for skill in team_member.skills %}
-              <li>{{ skill }}</li>
-            {% endfor %}
-          </ol>
-        </header>
-      </article>
-    {% endfor %}
-  </div>
 </section>
 
 <section class="testimonials">

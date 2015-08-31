@@ -253,7 +253,7 @@ main > section {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 31.76157%; }
+  width: 100%; }
   @media screen and (max-width: 720px) {
     #services article {
       float: left;
@@ -264,10 +264,6 @@ main > section {
         margin-right: 0; } }
   #services article:last-child {
     margin-right: 0; }
-  #services article:nth-child(3n) {
-    margin-right: 0; }
-  #services article:nth-child(3n+1) {
-    clear: left; }
 
 @media screen and (max-width: 720px) {
   .team article {

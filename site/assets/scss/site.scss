@@ -52,8 +52,7 @@ main > section {
     @include media($mobile) {
       @include span-columns(4);
     }
-    @include span-columns(4);
-    @include omega(3n);
+    @include span-columns(12);
   }
 }
 
