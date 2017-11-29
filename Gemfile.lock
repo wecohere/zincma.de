@@ -128,7 +128,7 @@ GEM
       parslet (~> 1.5.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    yajl-ruby (1.2.1)
+    yajl-ruby (1.2.3)
 
 PLATFORMS
   ruby
@@ -138,3 +138,6 @@ DEPENDENCIES
   foreman (= 0.77.0)
   github-pages (= 33)
   neat (= 1.7.1)
+
+BUNDLED WITH
+   1.16.0
